@@ -1,0 +1,146 @@
+/* Global */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #5bc745;
+  color: olive;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 6px rgba(126, 98, 98, 0.2);
+  width: 100%;
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.dan {
+  color: #278592;
+}
+
+.port {
+  color: #7f715b;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: rgb(71, 73, 74);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #9fbec2;
+}
+
+/* Main Section */
+.main {
+  width: 80%;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(147, 116, 116, 0.1);
+}
+
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+h2 {
+  color: #444;
+  border-bottom: 2px solid #00bcd4;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: "✔ ";
+  margin-left: 20px;
+}
+
+a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #19b342;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  margin-top: 40px;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .profile img {
+    display: block;
+    margin: 0 auto 20px;
+    float: none;
+  }
+
+  .main {
+    width: 90%;
+  }
+}
